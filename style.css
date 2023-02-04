@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?&family=Roboto:wght@100;300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #16213E;
+}
+
+.seccion {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.seccion:hover {
+    background: radial-gradient(circle at 100% 100%, #16213E 0, #16213E 6px, transparent 6px) 0% 0%/12px 12px no-repeat,
+        radial-gradient(circle at 0 100%, #16213E 0, #16213E 6px, transparent 6px) 100% 0%/12px 12px no-repeat,
+        radial-gradient(circle at 100% 0, #16213E 0, #16213E 6px, transparent 6px) 0% 100%/12px 12px no-repeat,
+        radial-gradient(circle at 0 0, #16213E 0, #16213E 6px, transparent 6px) 100% 100%/12px 12px no-repeat,
+        linear-gradient(#16213E, #16213E) 50% 50%/calc(100% - 12px) calc(100% - 24px) no-repeat,
+        linear-gradient(#16213E, #16213E) 50% 50%/calc(100% - 24px) calc(100% - 12px) no-repeat,
+        linear-gradient(90deg, #09d0d9 0%, #48abe0 100%);
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    padding: 150px 0px 75px 0px;
+    position: relative;
+    width: 300px;
+    background-color: #16213E;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.contenido {
+    position: relative;
+    padding: 20px;
+}
+
+.contenido h2 {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.contenedor:hover .contenido h2 {
+    top: -100px;
+}
+
+.contenedor .contenido h3 {
+    margin: 0 0 10px;
+    padding: 0px;
+    font-size: 27px;
+    font-weight: 500;
+    color: white;
+}
+
+.contenedor .contenido p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.contenedor .contenido a {
+    position: relative;
+    font-size: 20px;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.contenedor:hover .contenido a{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor .contenido a:hover{
+    color: white;
+    border: 1px solid black;
+    background: rgb(9, 208, 217);
+    background: linear-gradient(90deg, rgba(9, 208, 217, 1) 0%, rgba(72, 171, 224, 1) 100%);
+}
